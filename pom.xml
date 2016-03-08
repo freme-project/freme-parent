@@ -59,6 +59,14 @@
 		</plugins>
 	</build>
 
+	
+	<scm>
+		<connection>scm:git:git@github.com:freme-project/freme-parent.git</connection>
+		<url>scm:git:git@github.com/freme-project:freme-parent.git</url>
+		<developerConnection>scm:git:git@github.com:freme-project/freme-parent.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<distributionManagement>
 		<repository>
 			<id>freme-nexus</id>
