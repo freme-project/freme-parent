@@ -147,11 +147,6 @@
 				<groupId>eu.freme.bservices.filters</groupId>
 				<version>0.3</version>
 			</dependency>
-			<dependency>
-				<groupId>eu.freme.bservices.filters</groupId>
-				<artifactId>proxy-filter</artifactId>
-				<version>0.4</version>
-			</dependency>
 
 			<!-- other basic services -->
 			<dependency>
@@ -180,11 +175,6 @@
 				<version>0.4</version>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>e-link</artifactId>
-			</dependency>
-			<dependency>
-				<artifactId>dbpedia-spotlight</artifactId>
-				<version>0.4</version>
-				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>dbpedia-spotlight</artifactId>
