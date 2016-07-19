@@ -150,7 +150,7 @@
 
 			<!-- other basic services -->
 			<dependency>
-				<version>0.4</version>
+				<version>0.5-SNAPSHOT</version>
 				<groupId>eu.freme.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
