@@ -124,7 +124,7 @@
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>0.4</version>
+				<version>0.5-SNAPSHOT</version>
 				<groupId>eu.freme.bservices.filters</groupId>
 			</dependency>
 			<dependency>
