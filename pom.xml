@@ -107,8 +107,8 @@
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
-				<version>0.3</version>
 				<artifactId>users</artifactId>
+				<version>0.4-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
