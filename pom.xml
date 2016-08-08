@@ -189,7 +189,7 @@
 			<dependency>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>freme-ner</artifactId>
-				<version>0.7</version>
+				<version>0.8-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
