@@ -64,7 +64,7 @@
 			<dependency>
 				<groupId>eu.freme</groupId>
 				<artifactId>common</artifactId>
-				<version>0.9-SNAPSHOT</version>
+				<version>0.9</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
@@ -93,27 +93,27 @@
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
 				<artifactId>nif-converter</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
 				<artifactId>pipelines</artifactId>
-				<version>0.4-SNAPSHOT</version>
+				<version>0.4</version>
 			</dependency>
 			<dependency>
 				<artifactId>sparql-converters</artifactId>
 				<groupId>eu.freme.bservices.controllers</groupId>
-				<version>0.4-SNAPSHOT</version>
+				<version>0.4</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
 				<artifactId>users</artifactId>
-				<version>0.4-SNAPSHOT</version>
+				<version>0.4</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
 				<artifactId>xslt-converter</artifactId>
-				<version>0.2-SNAPSHOT</version>
+				<version>0.2</version>
 			</dependency>
 
 			<!-- basic services - filters -->
@@ -124,7 +124,7 @@
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 				<groupId>eu.freme.bservices.filters</groupId>
 			</dependency>
 			<dependency>
@@ -145,7 +145,7 @@
 			<dependency>
 				<artifactId>proxy-filter</artifactId>
 				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 			</dependency>
 			<dependency>
 				<artifactId>rate-limiter</artifactId>
@@ -155,7 +155,7 @@
 
 			<!-- other basic services -->
 			<dependency>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 				<groupId>eu.freme.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
@@ -172,7 +172,7 @@
 			<dependency>
 				<groupId>eu.freme.bservices.filters</groupId>
 				<artifactId>urlsupport-filter</artifactId>
-				<version>0.1-SNAPSHOT</version>
+				<version>0.1</version>
 			</dependency>
 
 			<!-- FREME e-services -->
@@ -182,7 +182,7 @@
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
-				<version>0.4</version>
+				<version>0.6</version>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
@@ -199,7 +199,7 @@
 			<dependency>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>freme-ner</artifactId>
-				<version>0.8-SNAPSHOT</version>
+				<version>0.8</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
