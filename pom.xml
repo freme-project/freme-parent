@@ -177,7 +177,7 @@
 
 			<!-- FREME e-services -->
 			<dependency>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.6-SNAPSHOT</version>
 				<artifactId>tilde-services</artifactId>
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
