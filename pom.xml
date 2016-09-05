@@ -120,7 +120,7 @@
 			<dependency>
 				<artifactId>cors-filter</artifactId>
 				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.3</version>
+				<version>0.5-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
