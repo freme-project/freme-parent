@@ -173,7 +173,7 @@
 			</dependency>
 			<dependency>
 				<artifactId>test-helper</artifactId>
-				<version>0.3</version>
+				<version>0.5-SNAPSHOT</version>
 				<groupId>eu.freme.bservices</groupId>
 			</dependency>
 			<dependency>
