@@ -22,7 +22,7 @@
 
 	<properties>
 		<jena.version>2.11.2</jena.version>
-		<license.fileTemplate>/org/codehaus/mojo/license/third-party-file-groupByLicense.ftl</license.fileTemplate>
+		<license.useMissingFile>true</license.useMissingFile>
 	</properties>
 
 	<dependencies>
@@ -65,47 +65,7 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<version>1.9</version>
-				<executions>
-					<execution>
-						<id>default-cli</id>
-						<configuration>
-							<licenseMerges>
-								<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0</licenseMerge>
-								<licenseMerge>The MIT License|MIT|MIT License|MIT License (MIT)</licenseMerge>
-								<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)</licenseMerge>
-								<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
-								<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
-								<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or later|LGPL, version 2.1|The GNU Lesser General Public License, Version 2.1</licenseMerge>
-								<licenseMerge>The (New) BSD License|The BSD License|New BSD License|Revised BSD License|BSD 3-Clause License|New BSD license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License|The New BSD License</licenseMerge>
-								<licenseMerge>BSD License|BSD</licenseMerge>
-								<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL, v1.0</licenseMerge>
-								<licenseMerge>Mozilla Public License 1.1 (MPL 1.1)|MPL 1.1</licenseMerge>
-							</licenseMerges>
-						</configuration>
-					</execution>
-					<execution>
-						<id>add-third-party</id>
-						<configuration>
-							<licenseMerges>
-								<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0</licenseMerge>
-								<licenseMerge>The MIT License|MIT|MIT License|MIT License (MIT)</licenseMerge>
-								<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)</licenseMerge>
-								<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
-								<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
-								<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or later|LGPL, version 2.1|The GNU Lesser General Public License, Version 2.1</licenseMerge>
-								<licenseMerge>The (New) BSD License|The BSD License|New BSD License|Revised BSD License|BSD 3-Clause License|New BSD license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License</licenseMerge>
-								<licenseMerge>BSD License|BSD</licenseMerge>
-								<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL, v1.0</licenseMerge>
-								<licenseMerge>Mozilla Public License 1.1 (MPL 1.1)|MPL 1.1</licenseMerge>
-							</licenseMerges>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+			<!-- this plugin can be used to add and update the file license headers -->
 			<plugin>
 				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
@@ -114,14 +74,10 @@
 					<header>https://raw.githubusercontent.com/mycila/license-maven-plugin/master/license-maven-plugin/src/main/resources/com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
 					<properties>
 						<owner>
-							<!-- IMPORTANT: keep this indentation! So the copyright information
-								will be well formatted in all header files. -->
-							Agro-Know, Deutsches Forschungszentrum für Künstliche
-							Intelligenz, iMinds,
-							Institut für Angewandte Informatik e. V. an
-							der Universität Leipzig,
-							Istituto Superiore Mario Boella, Tilde,
-							Vistatec, WRIPL
+<!-- IMPORTANT: Keep this (_no_) indentation! So the copyright information will be well formatted in all file headers. -->
+Agro-Know, Deutsches Forschungszentrum für Künstliche Intelligenz, iMinds,
+Institut für Angewandte Informatik e. V. an der Universität Leipzig,
+Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 						</owner>
 						<email>http://freme-project.eu</email>
 					</properties>
@@ -134,6 +90,53 @@
 						<exclude>LICENSE</exclude>
 						<exclude>LICENSE-3RD-PARTY</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+
+			<!-- provides an alternative to the MavenApacheLicenseUtil by Arne Binder
+			and also to the com.mycila:license-maven-plugin -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.9</version>
+				<configuration>
+					<!-- configuration for goal (aggregate-)add-third-party -->
+					<fileTemplate>/org/codehaus/mojo/license/third-party-file-groupByLicense.ftl</fileTemplate>
+					<outputDirectory>${basedir}</outputDirectory>
+					<licenseMerges>
+						<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0</licenseMerge>
+						<licenseMerge>The MIT License|MIT|MIT License|MIT License (MIT)</licenseMerge>
+						<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)</licenseMerge>
+						<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
+						<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
+						<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or later|LGPL, version 2.1|The GNU Lesser General Public License, Version 2.1</licenseMerge>
+						<licenseMerge>The (New) BSD License|The BSD License|New BSD License|Revised BSD License|BSD 3-Clause License|New BSD license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License|The New BSD License</licenseMerge>
+						<licenseMerge>BSD License|BSD</licenseMerge>
+						<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL, v1.0</licenseMerge>
+						<licenseMerge>Mozilla Public License 1.1 (MPL 1.1)|MPL 1.1</licenseMerge>
+					</licenseMerges>
+
+					<!-- configuration for goal update-file-header -->
+					<licenseName>apache_v2</licenseName>
+					<copyrightOwners>
+<!-- IMPORTANT: Keep this (_no_) indentation! So the copyright information will be well formatted in all file headers. -->
+Agro-Know, Deutsches Forschungszentrum für Künstliche Intelligenz,
+iMinds, Institut für Angewandte Informatik e. V. an der Universität Leipzig,
+Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
+					</copyrightOwners>
+					<roots>
+						<root>${basedir}</root>
+					</roots>
+					<excludes>
+						<exclude>**/README</exclude>
+						<exclude>src/test/resources/**</exclude>
+						<exclude>src/main/resources/**</exclude>
+						<exclude>logs/**</exclude>
+						<exclude>changelog.txt</exclude>
+						<exclude>LICENSE</exclude>
+						<exclude>LICENSE-3RD-PARTY</exclude>
+					</excludes>
+
 				</configuration>
 			</plugin>
 		</plugins>
