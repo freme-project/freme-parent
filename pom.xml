@@ -21,6 +21,8 @@
 
 	<properties>
 		<jena.version>2.11.2</jena.version>
+		<license.fileTemplate>/org/codehaus/mojo/license/third-party-file-groupByLicense.ftl</license.fileTemplate>
+		<license.verbose>true</license.verbose>
 	</properties>
 
 	<dependencies>
@@ -61,6 +63,27 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.9</version>
+				<executions>
+					<execution>
+						<id>add-third-party</id>
+						<!--<id>default-cli</id>-->
+						<configuration>
+							<licenseMerges>
+								<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0</licenseMerge>
+								<licenseMerge>The MIT License|MIT|MIT License</licenseMerge>
+								<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)|Eclipse Public License - v 1.0|EPL|Eclipse Public License 1.0</licenseMerge>
+								<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1</licenseMerge>
+								<licenseMerge>New BSD License|Revised BSD License|The (New) BSD License</licenseMerge>
+							</licenseMerges>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
