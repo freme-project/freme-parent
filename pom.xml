@@ -104,14 +104,15 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 					<fileTemplate>/org/codehaus/mojo/license/third-party-file-groupByLicense.ftl</fileTemplate>
 					<outputDirectory>${basedir}</outputDirectory>
 					<licenseMerges>
-						<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0</licenseMerge>
+						<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0|ASL, version 2</licenseMerge>
+						<licenseMerge>Apache License|ASL|Apache-style license</licenseMerge>
 						<licenseMerge>The MIT License|MIT|MIT License|MIT License (MIT)</licenseMerge>
 						<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)</licenseMerge>
 						<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
 						<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
 						<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or later|LGPL, version 2.1|The GNU Lesser General Public License, Version 2.1</licenseMerge>
 						<licenseMerge>The (New) BSD License|The BSD License|New BSD License|Revised BSD License|BSD 3-Clause License|New BSD license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License|The New BSD License</licenseMerge>
-						<licenseMerge>BSD License|BSD</licenseMerge>
+						<licenseMerge>BSD License|BSD|BSD style|BSD style license|Berkeley Software Distribution (BSD) License</licenseMerge>
 						<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL, v1.0</licenseMerge>
 						<licenseMerge>Mozilla Public License 1.1 (MPL 1.1)|MPL 1.1</licenseMerge>
 					</licenseMerges>
