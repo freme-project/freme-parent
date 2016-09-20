@@ -4,6 +4,7 @@
 	<artifactId>freme-parent</artifactId>
 	<version>0.10-SNAPSHOT</version>
 	<packaging>pom</packaging>
+	<inceptionYear>2016</inceptionYear>
 
 	<licenses>
 		<license>
@@ -22,7 +23,6 @@
 	<properties>
 		<jena.version>2.11.2</jena.version>
 		<license.fileTemplate>/org/codehaus/mojo/license/third-party-file-groupByLicense.ftl</license.fileTemplate>
-		<license.verbose>true</license.verbose>
 	</properties>
 
 	<dependencies>
@@ -71,19 +71,70 @@
 				<version>1.9</version>
 				<executions>
 					<execution>
-						<id>add-third-party</id>
-						<!--<id>default-cli</id>-->
+						<id>default-cli</id>
 						<configuration>
 							<licenseMerges>
 								<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0</licenseMerge>
-								<licenseMerge>The MIT License|MIT|MIT License</licenseMerge>
-								<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)|Eclipse Public License - v 1.0|EPL|Eclipse Public License 1.0</licenseMerge>
-								<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1</licenseMerge>
-								<licenseMerge>New BSD License|Revised BSD License|The (New) BSD License</licenseMerge>
+								<licenseMerge>The MIT License|MIT|MIT License|MIT License (MIT)</licenseMerge>
+								<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)</licenseMerge>
+								<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
+								<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
+								<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or later|LGPL, version 2.1|The GNU Lesser General Public License, Version 2.1</licenseMerge>
+								<licenseMerge>The (New) BSD License|The BSD License|New BSD License|Revised BSD License|BSD 3-Clause License|New BSD license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License|The New BSD License</licenseMerge>
+								<licenseMerge>BSD License|BSD</licenseMerge>
+								<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL, v1.0</licenseMerge>
+								<licenseMerge>Mozilla Public License 1.1 (MPL 1.1)|MPL 1.1</licenseMerge>
+							</licenseMerges>
+						</configuration>
+					</execution>
+					<execution>
+						<id>add-third-party</id>
+						<configuration>
+							<licenseMerges>
+								<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0</licenseMerge>
+								<licenseMerge>The MIT License|MIT|MIT License|MIT License (MIT)</licenseMerge>
+								<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)</licenseMerge>
+								<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
+								<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
+								<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or later|LGPL, version 2.1|The GNU Lesser General Public License, Version 2.1</licenseMerge>
+								<licenseMerge>The (New) BSD License|The BSD License|New BSD License|Revised BSD License|BSD 3-Clause License|New BSD license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License</licenseMerge>
+								<licenseMerge>BSD License|BSD</licenseMerge>
+								<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL, v1.0</licenseMerge>
+								<licenseMerge>Mozilla Public License 1.1 (MPL 1.1)|MPL 1.1</licenseMerge>
 							</licenseMerges>
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<header>https://raw.githubusercontent.com/mycila/license-maven-plugin/master/license-maven-plugin/src/main/resources/com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+					<properties>
+						<owner>
+							<!-- IMPORTANT: keep this indentation! So the copyright information
+								will be well formatted in all header files. -->
+							Agro-Know, Deutsches Forschungszentrum für Künstliche
+							Intelligenz, iMinds,
+							Institut für Angewandte Informatik e. V. an
+							der Universität Leipzig,
+							Istituto Superiore Mario Boella, Tilde,
+							Vistatec, WRIPL
+						</owner>
+						<email>http://freme-project.eu</email>
+					</properties>
+					<excludes>
+						<exclude>**/README</exclude>
+						<exclude>src/test/resources/**</exclude>
+						<exclude>src/main/resources/**</exclude>
+						<exclude>logs/**</exclude>
+						<exclude>changelog.txt</exclude>
+						<exclude>LICENSE</exclude>
+						<exclude>LICENSE-3RD-PARTY</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
