@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.freme</groupId>
 	<artifactId>freme-parent</artifactId>
-	<version>0.10-SNAPSHOT</version>
+	<version>0.10</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
 
@@ -149,7 +149,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme</groupId>
 				<artifactId>common</artifactId>
-				<version>0.10-SNAPSHOT</version>
+				<version>0.10</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
@@ -178,17 +178,17 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
 				<artifactId>nif-converter</artifactId>
-				<version>0.6-SNAPSHOT</version>
+				<version>0.6</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
 				<artifactId>pipelines</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 			</dependency>
 			<dependency>
 				<artifactId>sparql-converters</artifactId>
 				<groupId>eu.freme.bservices.controllers</groupId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
@@ -205,11 +205,11 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<artifactId>cors-filter</artifactId>
 				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>0.6-SNAPSHOT</version>
+				<version>0.6</version>
 				<groupId>eu.freme.bservices.filters</groupId>
 			</dependency>
 			<dependency>
@@ -225,7 +225,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme.bservices.filters</groupId>
 				<artifactId>postprocessing</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 			</dependency>
 			<dependency>
 				<artifactId>proxy-filter</artifactId>
@@ -240,18 +240,18 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 
 			<!-- other basic services -->
 			<dependency>
-				<version>0.6-SNAPSHOT</version>
+				<version>0.6</version>
 				<groupId>eu.freme.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>package-maker</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 				<groupId>eu.freme.bservices</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>test-helper</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 				<groupId>eu.freme.bservices</groupId>
 			</dependency>
 			<dependency>
@@ -262,18 +262,18 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 
 			<!-- FREME e-services -->
 			<dependency>
-				<version>0.6-SNAPSHOT</version>
+				<version>0.6</version>
 				<artifactId>tilde-services</artifactId>
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
-				<version>0.7-SNAPSHOT</version>
+				<version>0.7</version>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>dbpedia-spotlight</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
@@ -284,7 +284,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>freme-ner</artifactId>
-				<version>0.9-SNAPSHOT</version>
+				<version>0.9</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
