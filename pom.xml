@@ -205,7 +205,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<artifactId>cors-filter</artifactId>
 				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.5</version>
+				<version>0.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
