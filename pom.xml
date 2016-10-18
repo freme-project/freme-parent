@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.freme</groupId>
 	<artifactId>freme-parent</artifactId>
-	<version>0.11</version>
+	<version>0.12-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
 
@@ -284,7 +284,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>freme-ner</artifactId>
-				<version>0.10</version>
+				<version>0.11-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
