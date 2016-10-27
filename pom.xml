@@ -13,7 +13,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.freme-project</groupId>
 	<artifactId>freme-parent</artifactId>
-	<version>0.12-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
 	<description>FREME is an open framework of e-services for multilingual and semantic enrichment of digital content</description>
