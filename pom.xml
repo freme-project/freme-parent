@@ -11,7 +11,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>eu.freme</groupId>
+	<groupId>com.github.freme-project</groupId>
 	<artifactId>freme-parent</artifactId>
 	<version>0.12-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -100,8 +100,10 @@
 								will be well formatted in all file headers. -->
 							Agro-Know, Deutsches Forschungszentrum für Künstliche
 							Intelligenz, iMinds,
-							Institut für Angewandte Informatik e. V. an der Universität Leipzig,
-							Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
+							Institut für Angewandte Informatik e. V. an
+							der Universität Leipzig,
+							Istituto Superiore Mario Boella, Tilde,
+							Vistatec, WRIPL
 						</owner>
 						<email>http://freme-project.eu</email>
 					</properties>
@@ -163,7 +165,8 @@
 						Agro-Know, Deutsches Forschungszentrum für Künstliche Intelligenz,
 						iMinds, Institut für Angewandte Informatik e. V. an der
 						Universität Leipzig,
-						Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
+						Istituto Superiore Mario Boella, Tilde,
+						Vistatec, WRIPL
 					</copyrightOwners>
 					<roots>
 						<root>${basedir}</root>
@@ -320,38 +323,31 @@
 		<developerConnection>scm:git:git@github.com:freme-project/freme-parent.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
-	
+
 
 	<distributionManagement>
-		<repository>
-			<id>freme-nexus</id>
-			<name>Internal Releases</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/releases/</url>
-		</repository>
 		<snapshotRepository>
-			<id>freme-nexus</id>
-			<name>Internal Releases</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/snapshots/</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
 
-	<repositories>
-		<repository>
-			<id>freme-release</id>
-			<name>freme-nexus</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>freme-nexus</id>
-			<name>freme-nexus</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-	</repositories>
+
+
+
+
+	<!-- <distributionManagement> <repository> <id>freme-nexus</id> <name>Internal 
+		Releases</name> <url>http://rv1443.1blu.de/nexus/content/repositories/releases/</url> 
+		</repository> <snapshotRepository> <id>freme-nexus</id> <name>Internal Releases</name> 
+		<url>http://rv1443.1blu.de/nexus/content/repositories/snapshots/</url> </snapshotRepository> 
+		</distributionManagement> <repositories> <repository> <id>freme-release</id> 
+		<name>freme-nexus</name> <url>http://rv1443.1blu.de/nexus/content/repositories/releases/</url> 
+		<snapshots> <enabled>false</enabled> </snapshots> </repository> <repository> 
+		<id>freme-nexus</id> <name>freme-nexus</name> <url>http://rv1443.1blu.de/nexus/content/repositories/snapshots/</url> 
+		<releases> <enabled>false</enabled> </releases> </repository> </repositories> -->
 </project>
 
