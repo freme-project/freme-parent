@@ -21,7 +21,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.freme</groupId>
 	<artifactId>freme-parent</artifactId>
-	<version>0.12-SNAPSHOT</version>
+	<version>0.12</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
 
@@ -168,7 +168,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme</groupId>
 				<artifactId>common</artifactId>
-				<version>0.12-SNAPSHOT</version>
+				<version>0.12</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
@@ -224,7 +224,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<artifactId>cors-filter</artifactId>
 				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.7-SNAPSHOT</version>
+				<version>0.7</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
@@ -259,7 +259,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 
 			<!-- other basic services -->
 			<dependency>
-				<version>0.8-SNAPSHOT</version>
+				<version>0.8</version>
 				<groupId>eu.freme.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
@@ -276,17 +276,17 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme.bservices.filters</groupId>
 				<artifactId>urlsupport-filter</artifactId>
-				<version>0.3-SNAPSHOT</version>
+				<version>0.3</version>
 			</dependency>
 
 			<!-- FREME e-services -->
 			<dependency>
-				<version>0.8-SNAPSHOT</version>
+				<version>0.8</version>
 				<artifactId>tilde-services</artifactId>
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
-				<version>0.8-SNAPSHOT</version>
+				<version>0.8</version>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
@@ -297,7 +297,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			</dependency>
 			<dependency>
 				<artifactId>publishing</artifactId>
-				<version>0.7-SNAPSHOT</version>
+				<version>0.7</version>
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
