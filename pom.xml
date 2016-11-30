@@ -43,6 +43,16 @@
 		<jena.version>2.11.2</jena.version>
 		<license.useMissingFile>true</license.useMissingFile>
 	</properties>
+	
+	
+	<developers>
+		<developer>
+			<name>Jan Nehring</name>
+			<email>jan.nehring@dfki.de</email>
+			<organization>DFKI</organization>
+			<organizationUrl>http://www.dfki.de</organizationUrl>
+		</developer>
+	</developers>
 
 	<dependencies>
 		<dependency>
