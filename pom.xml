@@ -19,7 +19,7 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>eu.freme</groupId>
+	<groupId>eu.freme-project</groupId>
 	<artifactId>freme-parent</artifactId>
 	<version>0.13-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -176,144 +176,144 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 		<dependencies>
 			<!-- freme common -->
 			<dependency>
-				<groupId>eu.freme</groupId>
+				<groupId>eu.freme-project</groupId>
 				<artifactId>common</artifactId>
-				<version>0.12</version>
+				<version>0.13-SNAPSHOT</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
 			<!--<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
+				<groupId>eu.freme-project.bservices.cloud</groupId>
 				<artifactId>cloud-parent</artifactId>
 				<version>0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
+				<groupId>eu.freme-project.bservices.cloud</groupId>
 				<artifactId>eureka-client</artifactId>
 				<version>0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
+				<groupId>eu.freme-project.bservices.cloud</groupId>
 				<artifactId>eureka-server</artifactId>
 				<version>0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
+				<groupId>eu.freme-project.bservices.cloud</groupId>
 				<artifactId>load-balancer</artifactId>
 				<version>0.1-SNAPSHOT</version>
 			</dependency>
       -->
 			<!-- basic services - controllers -->
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>nif-converter</artifactId>
-				<version>0.6</version>
+				<version>0.7-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>pipelines</artifactId>
-				<version>0.5</version>
+				<version>0.7-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>sparql-converters</artifactId>
-				<groupId>eu.freme.bservices.controllers</groupId>
-				<version>0.5</version>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
+				<version>0.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>users</artifactId>
-				<version>0.4</version>
+				<version>0.5-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>xslt-converter</artifactId>
-				<version>0.2</version>
+				<version>0.3-SNAPSHOT</version>
 			</dependency>
 
 			<!-- basic services - filters -->
 			<dependency>
 				<artifactId>cors-filter</artifactId>
-				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.7</version>
+				<groupId>eu.freme-project.bservices.filters</groupId>
+				<version>0.8-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>0.6</version>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<version>0.7-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>logging</artifactId>
-				<version>0.3</version>
+				<version>0.5-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme</groupId>
+				<groupId>eu.freme-project</groupId>
 				<artifactId>e-capitalization</artifactId>
-				<version>0.1</version>
+				<version>0.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>postprocessing</artifactId>
-				<version>0.5</version>
+				<version>0.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>proxy-filter</artifactId>
-				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.5</version>
+				<groupId>eu.freme-project.bservices.filters</groupId>
+				<version>0.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>rate-limiter</artifactId>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<version>0.3</version>
 			</dependency>
 
 			<!-- other basic services -->
 			<dependency>
-				<version>0.8</version>
-				<groupId>eu.freme.bservices</groupId>
+				<version>0.9-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>package-maker</artifactId>
-				<version>0.5</version>
-				<groupId>eu.freme.bservices</groupId>
+				<version>0.6-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>test-helper</artifactId>
-				<version>0.5</version>
-				<groupId>eu.freme.bservices</groupId>
+				<version>0.7-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>urlsupport-filter</artifactId>
-				<version>0.3</version>
+				<version>0.4-SNAPSHOT</version>
 			</dependency>
 
 			<!-- FREME e-services -->
 			<dependency>
-				<version>0.8</version>
+				<version>0.9-SNAPSHOT</version>
 				<artifactId>tilde-services</artifactId>
-				<groupId>eu.freme.e-services</groupId>
+				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
-				<version>0.8</version>
-				<groupId>eu.freme.e-services</groupId>
+				<version>0.9-SNAPSHOT</version>
+				<groupId>eu.freme-project.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>dbpedia-spotlight</artifactId>
-				<version>0.5</version>
-				<groupId>eu.freme.e-services</groupId>
+				<version>0.7-SNAPSHOT</version>
+				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>publishing</artifactId>
-				<version>0.7</version>
-				<groupId>eu.freme.e-services</groupId>
+				<version>0.8-SNAPSHOT</version>
+				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.e-services</groupId>
+				<groupId>eu.freme-project.e-services</groupId>
 				<artifactId>freme-ner</artifactId>
-				<version>0.12</version>
+				<version>0.13-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
