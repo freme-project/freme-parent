@@ -296,7 +296,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
-				<version>0.8</version>
+				<version>0.9-SNAPSHOT</version>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
