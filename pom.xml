@@ -178,7 +178,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme</groupId>
 				<artifactId>common</artifactId>
-				<version>0.12</version>
+				<version>0.13-SNAPSHOT</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
@@ -291,7 +291,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 
 			<!-- FREME e-services -->
 			<dependency>
-				<version>0.8</version>
+				<version>0.9-SNAPSHOT</version>
 				<artifactId>tilde-services</artifactId>
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
