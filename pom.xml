@@ -21,7 +21,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.freme</groupId>
 	<artifactId>freme-parent</artifactId>
-	<version>0.14</version>
+	<version>0.13</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
 
@@ -178,7 +178,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme</groupId>
 				<artifactId>common</artifactId>
-				<version>0.13-SNAPSHOT</version>
+				<version>0.13</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
@@ -207,7 +207,7 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
 				<artifactId>nif-converter</artifactId>
-				<version>0.7-SNAPSHOT</version>
+				<version>0.6</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme.bservices.controllers</groupId>
@@ -291,12 +291,12 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 
 			<!-- FREME e-services -->
 			<dependency>
-				<version>0.9-SNAPSHOT</version>
+				<version>0.9</version>
 				<artifactId>tilde-services</artifactId>
 				<groupId>eu.freme.e-services</groupId>
 			</dependency>
 			<dependency>
-				<version>0.9-SNAPSHOT</version>
+				<version>0.9</version>
 				<groupId>eu.freme.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
