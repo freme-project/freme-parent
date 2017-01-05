@@ -1,29 +1,24 @@
-<!--
-
-    Copyright © 2016 Agro-Know, Deutsches Forschungszentrum für Künstliche Intelligenz, iMinds,
-    Institut für Angewandte Informatik e. V. an der Universität Leipzig,
-    Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL (http://freme-project.eu)
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
--->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<!-- Copyright © 2016 Agro-Know, Deutsches Forschungszentrum für Künstliche 
+	Intelligenz, iMinds, Institut für Angewandte Informatik e. V. an der Universität 
+	Leipzig, Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL (http://freme-project.eu) 
+	Licensed under the Apache License, Version 2.0 (the "License"); you may not 
+	use this file except in compliance with the License. You may obtain a copy 
+	of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required 
+	by applicable law or agreed to in writing, software distributed under the 
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
+	OF ANY KIND, either express or implied. See the License for the specific 
+	language governing permissions and limitations under the License. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>eu.freme</groupId>
+	<groupId>eu.freme-project</groupId>
 	<artifactId>freme-parent</artifactId>
 	<version>0.14-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
+
+	<description>FREME is an open framework of e-services for multilingual and semantic enrichment of digital content</description>
+	<url>https://github.com/freme-project</url>
 
 	<licenses>
 		<license>
@@ -43,8 +38,8 @@
 		<jena.version>2.11.2</jena.version>
 		<license.useMissingFile>true</license.useMissingFile>
 	</properties>
-	
-	
+
+
 	<developers>
 		<developer>
 			<name>Jan Nehring</name>
@@ -103,10 +98,14 @@
 					<header>https://raw.githubusercontent.com/mycila/license-maven-plugin/master/license-maven-plugin/src/main/resources/com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
 					<properties>
 						<owner>
-<!-- IMPORTANT: Keep this (_no_) indentation! So the copyright information will be well formatted in all file headers. -->
-Agro-Know, Deutsches Forschungszentrum für Künstliche Intelligenz, iMinds,
-Institut für Angewandte Informatik e. V. an der Universität Leipzig,
-Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
+							<!-- IMPORTANT: Keep this (_no_) indentation! So the copyright information 
+								will be well formatted in all file headers. -->
+							Agro-Know, Deutsches Forschungszentrum für Künstliche
+							Intelligenz, iMinds,
+							Institut für Angewandte Informatik e. V. an
+							der Universität Leipzig,
+							Istituto Superiore Mario Boella, Tilde,
+							Vistatec, WRIPL
 						</owner>
 						<email>http://freme-project.eu</email>
 					</properties>
@@ -122,8 +121,8 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 				</configuration>
 			</plugin>
 
-			<!-- provides an alternative to the MavenApacheLicenseUtil by Arne Binder
-			and also to the com.mycila:license-maven-plugin -->
+			<!-- provides an alternative to the MavenApacheLicenseUtil by Arne Binder 
+				and also to the com.mycila:license-maven-plugin -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>license-maven-plugin</artifactId>
@@ -133,26 +132,43 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 					<fileTemplate>/org/codehaus/mojo/license/third-party-file-groupByLicense.ftl</fileTemplate>
 					<outputDirectory>${basedir}</outputDirectory>
 					<licenseMerges>
-						<licenseMerge>The Apache Software License, Version 2.0|Apache License, Version 2.0|Apache Public License 2.0|Apache License Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache 2|AL 2.0|ASL, version 2</licenseMerge>
+						<licenseMerge>The Apache Software License, Version 2.0|Apache
+							License, Version 2.0|Apache Public License 2.0|Apache License
+							Version 2.0|Apache License 2.0|Apache License, version 2.0|Apache
+							2|AL 2.0|ASL, version 2</licenseMerge>
 						<licenseMerge>Apache License|ASL|Apache-style license</licenseMerge>
 						<licenseMerge>The MIT License|MIT|MIT License|MIT License (MIT)</licenseMerge>
-						<licenseMerge>Eclipse Distribution License (EDL), Version 1.0|Eclipse Public License (EPL)</licenseMerge>
-						<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
-						<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
-						<licenseMerge>GNU Lesser General Public License (LGPL), Version 2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or later|LGPL, version 2.1|The GNU Lesser General Public License, Version 2.1</licenseMerge>
-						<licenseMerge>The (New) BSD License|The BSD License|New BSD License|Revised BSD License|BSD 3-Clause License|New BSD license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License|The New BSD License</licenseMerge>
-						<licenseMerge>BSD License|BSD|BSD style|BSD style license|Berkeley Software Distribution (BSD) License</licenseMerge>
-						<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL, v1.0</licenseMerge>
+						<licenseMerge>Eclipse Distribution License (EDL), Version
+							1.0|Eclipse Public License (EPL)</licenseMerge>
+						<licenseMerge>Eclipse Public License (EPL), Version 1.0|Eclipse
+							Public License 1.0|Eclipse Public License - v 1.0|EPL|</licenseMerge>
+						<licenseMerge>GNU Lesser General Public License (LGPL)|GNU Lesser
+							General Public License|GNU LESSER GENERAL PUBLIC LICENSE|LGPL</licenseMerge>
+						<licenseMerge>GNU Lesser General Public License (LGPL), Version
+							2.1|GNU Lesser General Public License 2.1|LGPL 2.1|LGPL, v2.1 or
+							later|LGPL, version 2.1|The GNU Lesser General Public License,
+							Version 2.1</licenseMerge>
+						<licenseMerge>The (New) BSD License|The BSD License|New BSD
+							License|Revised BSD License|BSD 3-Clause License|New BSD
+							license|BSD 3-clause|BSD 3-Clause|The BSD 3-Clause License|The
+							New BSD License</licenseMerge>
+						<licenseMerge>BSD License|BSD|BSD style|BSD style license|Berkeley
+							Software Distribution (BSD) License</licenseMerge>
+						<licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)
+							Version 1.0|CDDL, v1.0</licenseMerge>
 						<licenseMerge>Mozilla Public License 1.1 (MPL 1.1)|MPL 1.1</licenseMerge>
 					</licenseMerges>
 
 					<!-- configuration for goal update-file-header -->
 					<licenseName>apache_v2</licenseName>
 					<copyrightOwners>
-<!-- IMPORTANT: Keep this (_no_) indentation! So the copyright information will be well formatted in all file headers. -->
-Agro-Know, Deutsches Forschungszentrum für Künstliche Intelligenz,
-iMinds, Institut für Angewandte Informatik e. V. an der Universität Leipzig,
-Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
+						<!-- IMPORTANT: Keep this (_no_) indentation! So the copyright information 
+							will be well formatted in all file headers. -->
+						Agro-Know, Deutsches Forschungszentrum für Künstliche Intelligenz,
+						iMinds, Institut für Angewandte Informatik e. V. an der
+						Universität Leipzig,
+						Istituto Superiore Mario Boella, Tilde,
+						Vistatec, WRIPL
 					</copyrightOwners>
 					<roots>
 						<root>${basedir}</root>
@@ -169,6 +185,40 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<additionalparam>-Xdoclint:none</additionalparam>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
 		</plugins>
 	</build>
 
@@ -176,144 +226,129 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 		<dependencies>
 			<!-- freme common -->
 			<dependency>
-				<groupId>eu.freme</groupId>
+				<groupId>eu.freme-project</groupId>
 				<artifactId>common</artifactId>
 				<version>0.13</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
-			<!--<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
-				<artifactId>cloud-parent</artifactId>
-				<version>0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
-				<artifactId>eureka-client</artifactId>
-				<version>0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
-				<artifactId>eureka-server</artifactId>
-				<version>0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>eu.freme.bservices.cloud</groupId>
-				<artifactId>load-balancer</artifactId>
-				<version>0.1-SNAPSHOT</version>
-			</dependency>
-      -->
+			<!--<dependency> <groupId>eu.freme-project.bservices.cloud</groupId> <artifactId>cloud-parent</artifactId> 
+				<version>0.1-SNAPSHOT</version> </dependency> <dependency> <groupId>eu.freme-project.bservices.cloud</groupId> 
+				<artifactId>eureka-client</artifactId> <version>0.1-SNAPSHOT</version> </dependency> 
+				<dependency> <groupId>eu.freme-project.bservices.cloud</groupId> <artifactId>eureka-server</artifactId> 
+				<version>0.1-SNAPSHOT</version> </dependency> <dependency> <groupId>eu.freme-project.bservices.cloud</groupId> 
+				<artifactId>load-balancer</artifactId> <version>0.1-SNAPSHOT</version> </dependency> -->
 			<!-- basic services - controllers -->
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>nif-converter</artifactId>
 				<version>0.7-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>pipelines</artifactId>
-				<version>0.5</version>
+				<version>0.7-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>sparql-converters</artifactId>
-				<groupId>eu.freme.bservices.controllers</groupId>
-				<version>0.5</version>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
+				<version>0.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>users</artifactId>
-				<version>0.4</version>
+				<version>0.5-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.controllers</groupId>
+				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>xslt-converter</artifactId>
-				<version>0.2</version>
+				<version>0.3-SNAPSHOT</version>
 			</dependency>
 
 			<!-- basic services - filters -->
 			<dependency>
 				<artifactId>cors-filter</artifactId>
-				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.7</version>
+				<groupId>eu.freme-project.bservices.filters</groupId>
+				<version>0.8-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>0.6</version>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<version>0.7-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>logging</artifactId>
-				<version>0.3</version>
+				<version>0.5-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme</groupId>
+				<groupId>eu.freme-project</groupId>
 				<artifactId>e-capitalization</artifactId>
-				<version>0.1</version>
+				<version>0.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>postprocessing</artifactId>
-				<version>0.5</version>
+				<version>0.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>proxy-filter</artifactId>
-				<groupId>eu.freme.bservices.filters</groupId>
-				<version>0.5</version>
+				<groupId>eu.freme-project.bservices.filters</groupId>
+				<version>0.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<artifactId>rate-limiter</artifactId>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<version>0.3</version>
 			</dependency>
 
 			<!-- other basic services -->
 			<dependency>
-				<version>0.8</version>
-				<groupId>eu.freme.bservices</groupId>
+				<version>0.9-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>package-maker</artifactId>
-				<version>0.5</version>
-				<groupId>eu.freme.bservices</groupId>
+				<version>0.6-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>test-helper</artifactId>
-				<version>0.5</version>
-				<groupId>eu.freme.bservices</groupId>
+				<version>0.7-SNAPSHOT</version>
+				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.bservices.filters</groupId>
+				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>urlsupport-filter</artifactId>
-				<version>0.3</version>
+				<version>0.4-SNAPSHOT</version>
 			</dependency>
 
 			<!-- FREME e-services -->
 			<dependency>
 				<version>0.9</version>
 				<artifactId>tilde-services</artifactId>
-				<groupId>eu.freme.e-services</groupId>
+				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
 				<version>0.9</version>
-				<groupId>eu.freme.e-services</groupId>
+				<groupId>eu.freme-project.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>dbpedia-spotlight</artifactId>
-				<version>0.5</version>
-				<groupId>eu.freme.e-services</groupId>
+				<version>0.7-SNAPSHOT</version>
+				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>publishing</artifactId>
-				<version>0.7</version>
-				<groupId>eu.freme.e-services</groupId>
+				<version>0.8-SNAPSHOT</version>
+				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
-				<groupId>eu.freme.e-services</groupId>
+				<groupId>eu.freme-project.e-services</groupId>
 				<artifactId>freme-ner</artifactId>
-				<version>0.12</version>
+				<version>0.13-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -322,39 +357,20 @@ Istituto Superiore Mario Boella, Tilde, Vistatec, WRIPL
 		<connection>scm:git:git@github.com:freme-project/freme-parent.git</connection>
 		<url>scm:git:git@github.com/freme-project:freme-parent.git</url>
 		<developerConnection>scm:git:git@github.com:freme-project/freme-parent.git</developerConnection>
-		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
-		<repository>
-			<id>freme-nexus</id>
-			<name>Internal Releases</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/releases/</url>
-		</repository>
 		<snapshotRepository>
-			<id>freme-nexus</id>
-			<name>Internal Releases</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/snapshots/</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
 
-	<repositories>
-		<repository>
-			<id>freme-release</id>
-			<name>freme-nexus</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>freme-nexus</id>
-			<name>freme-nexus</name>
-			<url>http://rv1443.1blu.de/nexus/content/repositories/snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-	</repositories>
+
+
 </project>
 
