@@ -12,7 +12,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.freme-project</groupId>
 	<artifactId>freme-parent</artifactId>
-	<version>test-release-6</version>
+	<version>0.16-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
 
@@ -400,7 +400,7 @@
 		<connection>scm:git:git@github.com:freme-project/freme-parent.git</connection>
 		<url>scm:git:git@github.com/freme-project:freme-parent.git</url>
 		<developerConnection>scm:git:git@github.com:freme-project/freme-parent.git</developerConnection>
-		<tag>freme-parent-test-release-6</tag>
+		<tag>freme-parent-0.16</tag>
 	</scm>
 
 	<distributionManagement>
