@@ -264,7 +264,6 @@
 						</executions>
 					</plugin>
 			</plugins>
-m	
 			</build>
 		</profile>
 	</profiles>
