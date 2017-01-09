@@ -201,7 +201,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-					<releaseProfiles>release</releaseProfile>
+					<releaseProfiles>release</releaseProfiles>
 				</configuration>
 			</plugin>
 		</plugins>
