@@ -276,7 +276,7 @@
 			<dependency>
 				<groupId>eu.freme-project</groupId>
 				<artifactId>common</artifactId>
-				<version>0.14</version>
+				<version>1.0</version>
 			</dependency>
 
 			<!-- basic services - freme cloud -->
@@ -290,118 +290,118 @@
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>nif-converter</artifactId>
-				<version>0.7</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>pipelines</artifactId>
-				<version>0.7</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<artifactId>sparql-converters</artifactId>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
-				<version>0.6</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>users</artifactId>
-				<version>0.5</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>xslt-converter</artifactId>
-				<version>0.3</version>
+				<version>1.0</version>
 			</dependency>
 
 			<!-- basic services - filters -->
 			<dependency>
 				<artifactId>cors-filter</artifactId>
 				<groupId>eu.freme-project.bservices.filters</groupId>
-				<version>0.8</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>0.7</version>
+				<version>1.0</version>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>logging</artifactId>
-				<version>0.5</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project</groupId>
 				<artifactId>e-capitalization</artifactId>
-				<version>0.2</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>postprocessing</artifactId>
-				<version>0.6</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<artifactId>proxy-filter</artifactId>
 				<groupId>eu.freme-project.bservices.filters</groupId>
-				<version>0.6</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<artifactId>rate-limiter</artifactId>
 				<groupId>eu.freme-project.bservices.filters</groupId>
-				<version>0.3</version>
+				<version>1.0</version>
 			</dependency>
 
 			<!-- other basic services -->
 			<dependency>
-				<version>0.9</version>
+				<version>1.0</version>
 				<groupId>eu.freme-project.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>package-maker</artifactId>
-				<version>0.6</version>
+				<version>1.0</version>
 				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>test-helper</artifactId>
-				<version>0.7</version>
+				<version>1.0</version>
 				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>urlsupport-filter</artifactId>
-				<version>0.5</version>
+				<version>1.0</version>
 			</dependency>
 
 			<!-- FREME e-services -->
 			<dependency>
-				<version>0.9</version>
+				<version>1.0</version>
 				<artifactId>tilde-services</artifactId>
 				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
-				<version>0.9</version>
+				<version>1.0</version>
 				<groupId>eu.freme-project.e-services</groupId>
 				<artifactId>e-link</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>dbpedia-spotlight</artifactId>
-				<version>0.9</version>
+				<version>1.0</version>
 				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>publishing</artifactId>
-				<version>0.8</version>
+				<version>1.0</version>
 				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.e-services</groupId>
 				<artifactId>freme-ner</artifactId>
-				<version>0.13</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>tika-filter</artifactId>
-				<version>0.1</version>
+				<version>1.0</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -410,7 +410,6 @@
 		<connection>scm:git:git@github.com:freme-project/freme-parent.git</connection>
 		<url>scm:git:git@github.com/freme-project:freme-parent.git</url>
 		<developerConnection>scm:git:git@github.com:freme-project/freme-parent.git</developerConnection>
-		<tag>freme-parent-0.16</tag>
 	</scm>
 
 	<distributionManagement>
@@ -430,4 +429,3 @@
 		<releases> <enabled>false</enabled> </releases> </repository> </repositories> -->
 
 </project>
-
