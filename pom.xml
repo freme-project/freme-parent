@@ -370,7 +370,7 @@
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>urlsupport-filter</artifactId>
-				<version>0.5-SNAPSHOT</version>
+				<version>0.5</version>
 			</dependency>
 
 			<!-- FREME e-services -->
@@ -386,7 +386,7 @@
 			</dependency>
 			<dependency>
 				<artifactId>dbpedia-spotlight</artifactId>
-				<version>0.9-SNAPSHOT</version>
+				<version>0.9</version>
 				<groupId>eu.freme-project.e-services</groupId>
 			</dependency>
 			<dependency>
@@ -402,7 +402,7 @@
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>tika-filter</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>0.1</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
