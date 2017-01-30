@@ -291,87 +291,89 @@
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>nif-converter</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>pipelines</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<artifactId>sparql-converters</artifactId>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>users</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.controllers</groupId>
 				<artifactId>xslt-converter</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 
 			<!-- basic services - filters -->
 			<dependency>
 				<artifactId>cors-filter</artifactId>
 				<groupId>eu.freme-project.bservices.filters</groupId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>logging</artifactId>
-				<version>1.0</version>
-			</dependency>
-			<dependency>
-				<groupId>eu.freme-project</groupId>
-				<artifactId>e-capitalization</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>postprocessing</artifactId>
-				<version>1.1-SNAPSHOT</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<artifactId>proxy-filter</artifactId>
 				<groupId>eu.freme-project.bservices.filters</groupId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<artifactId>rate-limiter</artifactId>
 				<groupId>eu.freme-project.bservices.filters</groupId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
 
 			<!-- other basic services -->
 			<dependency>
-				<version>1.0</version>
+				<version>1.1</version>
 				<groupId>eu.freme-project.bservices</groupId>
 				<artifactId>internationalization</artifactId>
 			</dependency>
 			<dependency>
 				<artifactId>package-maker</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
 				<artifactId>test-helper</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 				<groupId>eu.freme-project.bservices</groupId>
 			</dependency>
 			<dependency>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 				<artifactId>urlsupport-filter</artifactId>
-				<version>1.0</version>
+				<version>1.1</version>
 			</dependency>
+
+			<!-- basic services from freme-examples repo -->
+                        <dependency>
+                                <groupId>eu.freme-project</groupId>
+                                <artifactId>e-capitalization</artifactId>
+                                <version>1.0</version>
+                        </dependency>
 
 			<!-- FREME e-services -->
 			<dependency>
