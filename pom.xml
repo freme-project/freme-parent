@@ -313,7 +313,7 @@
 			</dependency>
 			<dependency>
 				<artifactId>internationalization-filter</artifactId>
-				<version>1.4</version>
+				<version>1.5</version>
 				<groupId>eu.freme-project.bservices.filters</groupId>
 			</dependency>
 			<dependency>
